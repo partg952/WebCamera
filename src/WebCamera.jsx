@@ -6,7 +6,7 @@ function WebCamera ({audio})
     navigator.mediaDevices.getUserMedia( { video: true, audio: audio } ).then( media =>
     {
         videoRef.current.srcObject = media;
-        videoRef.current.play()
+        videoRef.current.play();
     })
     return (
         <div>
